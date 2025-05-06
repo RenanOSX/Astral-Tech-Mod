@@ -14,8 +14,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.renanosx.astraltech.block.ModBlocks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +62,7 @@ public class MinersDreamItem extends Item {
         int invFlag    = Block.UPDATE_INVISIBLE;
         int notifyFlag = Block.UPDATE_CLIENTS | Block.UPDATE_NEIGHBORS;
 
-        // 3. Coleta posições em um único laço
+        // Get block positions
         List<BlockPos> tunnel    = new ArrayList<>();
         List<BlockPos> glassList = new ArrayList<>();
         List<BlockPos> torchList = new ArrayList<>();

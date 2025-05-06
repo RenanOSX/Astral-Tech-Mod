@@ -27,7 +27,7 @@ public class DupeTreeBlocks extends Block {
 
     public void DuplicatorTree(Level world, int x, int y, int z) {
 
-        // Encontrar o solo válido em até 3 blocos abaixo
+        // Find valid soil (3 blocks below base block)
         int realy = -1;
         for (int i = 1; i <= 3; i++) {
             BlockPos below = new BlockPos(x, y - i, z);
