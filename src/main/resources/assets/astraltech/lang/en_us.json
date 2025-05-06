@@ -1,0 +1,37 @@
+{
+  "item.astraltech.bismuth": "Bismuth",
+  "item.astraltech.raw_bismuth": "Raw Bismuth",
+  "item.astraltech.chisel": "Chisel",
+  "item.astraltech.miners_dream": "Miner's Dream",
+
+  "item.astraltech.radish": "Radish",
+  "item.astraltech.frostfire_ice": "Frostfire Ice",
+  "item.astraltech.starlight_ashes": "Starlight Ashes",
+
+  "item.astraltech.ultimate_sword": "Ultimate Sword",
+  "item.astraltech.ultimate_shovel": "Ultimate Shovel",
+  "item.astraltech.ultimate_pickaxe": "Ultimate Pickaxe",
+  "item.astraltech.ultimate_hoe": "Ultimate Hoe",
+  "item.astraltech.ultimate_axe": "Ultimate Axe",
+
+
+  "block.astraltech.bismuth_block": "Block of Bismuth",
+  "block.astraltech.bismuth_ore": "Bismuth Ore",
+  "block.astraltech.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+
+  "block.astraltech.magic_block": "Magic Block",
+  "block.astraltech.dupe_tree": "Dupe Tree",
+  "block.astraltech.dupe_leaves": "Dupe Leaves",
+
+
+  "creativetab.astraltech.bismuth_items": "Bismuth Items",
+  "creativetab.astraltech.bismuth_blocks": "Bismuth Blocks",
+
+
+  "tooltip.astraltech.magic_block.tooltip": "This Block is very §9MAGICAL§r",
+
+  "tooltip.astraltech.chisel.shift_down": "This Item can chisel Blocks into Bricks",
+  "tooltip.astraltech.chisel": "Press §eShift§r for more Information",
+
+  "tooltip.astraltech.radish.tooltip": "Tastes really great!"
+}

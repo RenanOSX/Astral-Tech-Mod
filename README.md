@@ -1,25 +1,59 @@
+**Astral Tech Mod**  
+*NeoForge • Minecraft 1.21.1*  
 
-Installation information
-=======
+---
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## 📖 Description  
+Astral Tech Mod is a study project aimed at understanding and applying, in practice, the fundamental concepts of mod development in Java for Minecraft 1.21.1 with NeoForge. The focus is on:
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- **Client–Server Architecture**  
+- **3D Object Rendering**  
+- **Event Handling in Java**  
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+---
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## 🚀 Learning Objectives  
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+1. **Client–Server Architecture**  
+   - Understand how the game synchronizes state between server and client.  
+   - Study network packets: data serialization and safe information transfer.  
+   - Technical concept: *thread‑safe* — ensuring that multiple threads don’t corrupt shared data.
+
+2. **Event Handling**  
+   - Use annotations like `@SubscribeEvent` to react to game events (block registration, player clicks, etc.).  
+   - Design patterns: *Observer* — components “observe” events without tight coupling.
+
+3. **3D Model Rendering (Not implemented yet)**  
+   - Configuring custom models via `.obj` files or NeoForge JSON.  
+   - Applying textures and UV mapping for correct mesh texturing.  
+   - Difference between static rendering (blocks) and dynamic rendering (moving block entities).
+
+4. **Graphical User Interfaces (GUI) (Not implemented yet)**  
+   - Building in-game control screens using NeoForge’s native system.  
+   - Technical concept: GUI lifecycle — initialization, update, and disposal of visual components.
+
+---
+
+## 🛠 Tools Used  
+- **Java 21**  
+- **NeoForge 1.21.1**  
+- **Gradle** (for build and execution)  
+- **IDE:** IntelliJ IDEA (with code inspection and formatter settings)
+
+---
+
+## ⚙️ How to Reproduce  
+1. Install Minecraft 1.21.1 with NeoForge 1.21.1.  
+2. Clone this repository:  
+   ```bash
+   git clone https://github.com/renanosx/astral-tech-mod.git
+3. Execute commands on Intellij
+
+```bash
+./gradlew runData     # Generates JSON files for data-driven assets
+
+./gradlew build       # Compile the project
+
+./gradlew runClient   # Run in client for testing
+
+./gradlew runServer   # Run a local server for testing`

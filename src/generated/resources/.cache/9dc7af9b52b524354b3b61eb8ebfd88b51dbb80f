@@ -1,0 +1,7 @@
+// 1.21.1	2025-05-05T01:31:08.5606001	Tags for minecraft:block mod id astraltech
+736ce1a87fdb865c5471b9b723ea220eec584708 data/astraltech/tags/block/incorrect_for_ultimate_tool.json
+0dfeffbcc0146d638d720d72e2c1fde9725b1b7b data/astraltech/tags/block/needs_ultimate_tool.json
+ab39d5c953f2a721b2dbb11728b6cafbc2203c92 data/minecraft/tags/block/mineable/axe.json
+0b9f40eb55b08251707e511038ad40487237cff9 data/minecraft/tags/block/mineable/hoe.json
+406556a2a777f3bea9aacc3014d7aca3d428aa0d data/minecraft/tags/block/mineable/pickaxe.json
+95396776a0cf427700219a60df68ccddf6a94bd6 data/minecraft/tags/block/needs_iron_tool.json

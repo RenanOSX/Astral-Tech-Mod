@@ -1,0 +1,7 @@
+// 1.21.1	2025-05-05T01:39:14.7702505	Tags for minecraft:item mod id astraltech
+139233b8a934434eececd181ab194b627f0c97f2 data/astraltech/tags/item/transformable_items.json
+88d0bfbedf934dcdd5cb8a25a19f1380f1d3ec94 data/minecraft/tags/item/axes.json
+094382d8ec9d58a18bbd280ddb056329e6397caf data/minecraft/tags/item/hoes.json
+d9e520dcbc158d35c9461b4533463a9eb2ad4bec data/minecraft/tags/item/pickaxes.json
+cc939a602692c54e6a0d72bdd04919ff7b77f668 data/minecraft/tags/item/shovels.json
+ea990cadae4d4c6a82dd868da18d878d2c48322a data/minecraft/tags/item/swords.json
