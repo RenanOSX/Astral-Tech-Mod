@@ -28,10 +28,10 @@ public class MinersDreamItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        Level lvl = context.getLevel();
-        if (lvl.isClientSide()) return InteractionResult.SUCCESS;
+        Level level = context.getLevel();
+        if (level.isClientSide()) return InteractionResult.SUCCESS;
 
-        ServerLevel world = (ServerLevel) lvl;
+        ServerLevel world = (ServerLevel) level;
         MinecraftServer server = world.getServer();
         Player player = context.getPlayer();
         BlockPos origin = context.getClickedPos();

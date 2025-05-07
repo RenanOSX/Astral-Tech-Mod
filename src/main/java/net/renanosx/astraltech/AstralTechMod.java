@@ -4,6 +4,7 @@ import net.renanosx.astraltech.block.ModBlocks;
 import net.renanosx.astraltech.item.ModCreativeModeTabs;
 import net.renanosx.astraltech.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.renanosx.astraltech.util.ModItemProperties;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -79,7 +80,7 @@ public class AstralTechMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

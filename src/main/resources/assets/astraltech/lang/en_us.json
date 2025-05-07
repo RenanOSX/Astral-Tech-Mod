@@ -13,7 +13,10 @@
   "item.astraltech.ultimate_pickaxe": "Ultimate Pickaxe",
   "item.astraltech.ultimate_hoe": "Ultimate Hoe",
   "item.astraltech.ultimate_axe": "Ultimate Axe",
-
+  "item.astraltech.ultimate_helmet": "Ultimate Helmet",
+  "item.astraltech.ultimate_chestplate": "Ultimate Chestplate",
+  "item.astraltech.ultimate_leggings": "Ultimate Leggings",
+  "item.astraltech.ultimate_boots": "Ultimate Boots",
 
   "block.astraltech.bismuth_block": "Block of Bismuth",
   "block.astraltech.bismuth_ore": "Bismuth Ore",
@@ -24,8 +27,7 @@
   "block.astraltech.dupe_leaves": "Dupe Leaves",
 
 
-  "creativetab.astraltech.bismuth_items": "Bismuth Items",
-  "creativetab.astraltech.bismuth_blocks": "Bismuth Blocks",
+  "creativetab.astraltech.astral_tech_items": "Astral Tech Mod",
 
 
   "tooltip.astraltech.magic_block.tooltip": "This Block is very §9MAGICAL§r",
