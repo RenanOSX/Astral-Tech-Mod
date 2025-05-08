@@ -1,6 +1,7 @@
 package net.renanosx.astraltech;
 
 import net.renanosx.astraltech.block.ModBlocks;
+import net.renanosx.astraltech.component.ModDataComponents;
 import net.renanosx.astraltech.item.ModCreativeModeTabs;
 import net.renanosx.astraltech.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -43,6 +44,7 @@ public class AstralTechMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -78,6 +80,7 @@ public class AstralTechMod {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();

@@ -15,6 +15,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.renanosx.astraltech.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -44,6 +45,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 

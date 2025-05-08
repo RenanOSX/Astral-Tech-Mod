@@ -2,10 +2,10 @@ package net.renanosx.astraltech.util;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.renanosx.astraltech.AstralTechMod;
 import net.renanosx.astraltech.component.ModDataComponents;
 import net.renanosx.astraltech.item.ModItems;
+import net.minecraft.world.item.Item;
 
 public class ModItemProperties {
     public static void addCustomItemProperties() {

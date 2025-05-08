@@ -11,13 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.neoforge.common.extensions.IBlockExtension;
 import net.renanosx.astraltech.Config;
 import net.renanosx.astraltech.block.ModBlocks;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 
 public class DupeTreeBlocks extends Block {
     public DupeTreeBlocks(Properties properties) {
@@ -32,23 +27,12 @@ public class DupeTreeBlocks extends Block {
 
     public void DuplicatorTree(Level world, int x, int y, int z) {
 
-        final Set<Block> BLOCK_WHITELIST = Set.of(
-                Blocks.GRASS_BLOCK,
-                Blocks.DIRT,
-                Blocks.FARMLAND
-        ); // The name already explains it lol
-
-        final Set<Block> BLOCK_BLACKLIST = Set.of(
-                Blocks.AIR,
-                Blocks.FARMLAND
-        ); // The name already explains it lol
-
         // Find valid soil (3 blocks below base block)
         int realy = -1;
         for (int i = 1; i <= 3; i++) {
             BlockPos below = new BlockPos(x, y - i, z);
             Block b = world.getBlockState(below).getBlock();
-            if (BLOCK_WHITELIST.contains(b.defaultBlockState().getBlock())) {
+            if (b == Blocks.GRASS_BLOCK || b == Blocks.DIRT || b == Blocks.FARMLAND) {
                 realy = y - i;
                 break;  // break loop if it finds a soil
             }
@@ -101,12 +85,12 @@ public class DupeTreeBlocks extends Block {
                 int k = world.random.nextInt(5) - 2; // -2 to +2
                 int j = world.random.nextInt(5) - 2;
                 bidm = world.getBlockState(new BlockPos(x + k, realy + 1, z + j)).getBlock();
-                if (!BLOCK_BLACKLIST.contains(b.defaultBlockState().getBlock()) && bidm != ModBlocks.DUPE_TREE.get()) {
+                if (bidm != Blocks.AIR && bidm != ModBlocks.DUPE_TREE.get()) {
                     break;
                 }
             }
             // If it found a valid block to dupe, find a spot to copy it there
-            if (!BLOCK_BLACKLIST.contains(bidm.defaultBlockState().getBlock()) && bidm != ModBlocks.DUPE_TREE.get()) {
+            if (bidm != Blocks.AIR && bidm != ModBlocks.DUPE_TREE.get()) {
                 for (int m = 0; m < 20; m++) {
                     int k = world.random.nextInt(5) - 2;
                     int j = world.random.nextInt(5) - 2;

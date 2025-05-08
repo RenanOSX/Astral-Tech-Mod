@@ -1,0 +1,6 @@
+{
+    "parent": "astraltech:item/ultimate_bow",
+    "textures": {
+        "layer0": "astraltech:item/ultimate_bow_pulling_0"
+    }
+}

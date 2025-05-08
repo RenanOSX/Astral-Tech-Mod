@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
             ModItems.ULTIMATE_CHESTPLATE,
             ModItems.ULTIMATE_LEGGINGS,
             ModItems.ULTIMATE_BOOTS,
+            ModItems.ULTIMATE_BOW,
 
             // ModBlocks
             ModBlocks.DUPE_TREE,
