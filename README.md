@@ -23,7 +23,7 @@ Astral Tech Mod is a study project aimed at understanding and applying, in pract
    - Use annotations like `@SubscribeEvent` to react to game events (block registration, player clicks, etc.).  
    - Design patterns: *Observer* — components “observe” events without tight coupling.
 
-3. **3D Model Rendering (Not implemented yet)**  
+3. **3D Model Rendering (WIP)**  
    - Configuring custom models via `.obj` files or NeoForge JSON.  
    - Applying textures and UV mapping for correct mesh texturing.  
    - Difference between static rendering (blocks) and dynamic rendering (moving block entities).
