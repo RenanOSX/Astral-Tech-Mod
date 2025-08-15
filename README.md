@@ -37,8 +37,8 @@ Astral Tech Mod is a study project aimed at understanding and applying, in pract
 ## 🛠 Tools Used  
 - **Java 21**  
 - **NeoForge 1.21.1**  
-- **Gradle** (for build and execution)  
-- **IDE:** IntelliJ IDEA (with code inspection and formatter settings)
+- **Gradle**
+- **IDE:** IntelliJ IDEA
 
 ---
 
